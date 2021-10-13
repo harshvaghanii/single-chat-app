@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:ital@1&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #403f3d;
+}
+
+#brand-name {
+    color: whitesmoke;
+    position: absolute;
+    left: 5%;
+}
+
+main {
+    width: 100vw;
+    height: 80vh;
+    color: white;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    border-radius: 15px;
+    padding: 18px;
+}
+
+.message {
+    color: black;
+    background-color: snow;
+    /* width: 100%; */
+    margin-top: 1.5%;
+    padding: 18px;
+    border-radius: 22px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.left {
+    border: 3px solid rgb(236, 234, 102);
+    width: fit-content;
+    min-width: 220px;
+    max-width: 60%;
+    margin-right: auto;
+    box-shadow: 4px 7px 37px -10px rgb(236, 234, 102);
+}
+
+.right {
+    width: fit-content;
+    min-width: 220px;
+    max-width: 60%;
+    border: 3px solid rgb(211, 64, 64);
+    margin-left: auto;
+    box-shadow: 4px 7px 37px -10px rgb(211, 64, 64);
+}
+
+.input-group {
+    margin-left: 9%;
+    width: 80%;
+}
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 1435px) {}

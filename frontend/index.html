@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hChat</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer src="../public/javascript/index.js"></script>
+    <!-- Stylesheet Link -->
+    <link rel="stylesheet" href="../public/css/style.css">
+
+</head>
+
+<body>
+    <!-- <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid brand-logo">
+            <img src="../public/images/logo.png" alt="logo" id="logo" width="30" height="24" class="d-inline-block align-text-top mx-1">
+            <h2 id="brand-name">hChat</h2>
+        </div>
+    </nav> -->
+
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../public/images/logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top"> hChat
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container container-fluid bg-dark my-2" id="container">
+            <!-- <div class="message right">
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, unde! Laborum ea vel nisi earum ipsum consequatur nulla, optio dolores neque animi adipisci porro hic maiores enim deserunt cupiditate iusto, similique dolor tempore nostrum.</span>
+            </div>
+            <div class="message left">
+                <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit quaerat maxime assumenda facilis quia dignissimos ipsam explicabo cupiditate quos recusandae iusto aut, unde repellat? Tempora consequatur commodi debitis voluptas fugiat animi culpa modi dignissimos?</span>
+            </div> -->
+        </div>
+    </main>
+    <div class="send-message">
+        <div class="input-group my-3">
+            <input type="text" id="input-message" class="form-control" placeholder="Message" autofocus aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button class="send-btn btn btn-outline-secondary btn-dark" type="button" id="sendBtn">Send</button>
+        </div>
+    </div>
+
+
+
+    <!-- Javascript -->
+
+
+    <!-- Bootstrap Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+    <!-- App js -->
+</body>
+
+</html>
