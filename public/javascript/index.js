@@ -34,9 +34,11 @@ if (name != '' && name != null && name != undefined) {
     location.reload();
 }
 
-// Whenever a new user joins, recieve the response from the backend and display it to other users!
+// Whenever a new user joins, receive the response from the backend and display it to other users!
 socket.on('user-joined', (name) => {
-    append(`${name} joined the chat`, 'right');
+    if (name != null && name.trim() != '') {
+        append(`${name} joined the chat`, 'right');
+    }
 });
 
 
@@ -47,7 +49,9 @@ socket.on('receive', (data) => {
 
 // If a user leaves the chat, append the info to the container
 socket.on('left', (name) => {
-    append(`${name} left the chat`, 'right')
+    if (name != null && name.trim() != '') {
+        append(`${name} left the chat`, 'right');
+    }
 })
 
 
